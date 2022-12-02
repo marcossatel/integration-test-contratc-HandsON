@@ -1,12 +1,13 @@
-%%Sobre o projeto
+Sobre o projeto
 
 HandON de teste de contratos em apis do spotify 
 
-%%Ferramentas
+Ferramentas
+
 *[Python]
 *[Postman]
 
-%%% Prerequisitos
+ Prerequisitos
 
 *pip
 pip install requests_oauthlib
