@@ -1,0 +1,374 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json1",
+  "title": "Root Schema",
+  "type": "object",
+  "default": {},
+  "required": [
+      "collaborative",
+      "description",
+      "external_urls",
+      "followers",
+      "href",
+      "id",
+      "images",
+      "name",
+      "owner",
+      "primary_color",
+      "public",
+      "snapshot_id",
+      "tracks",
+      "type",
+      "uri"
+  ],
+  "properties": {
+      "collaborative": {
+          "title": "The collaborative Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+              false
+          ]
+      },
+      "description": {
+          "title": "The description Schema",
+          "type": "null",
+          "default": null,
+          "examples": [
+              null
+          ]
+      },
+      "external_urls": {
+          "title": "The external_urls Schema",
+          "type": "object",
+          "default": {},
+          "required": [
+              "spotify"
+          ],
+          "properties": {
+              "spotify": {
+                  "title": "The spotify Schema",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                      "https://open.spotify.com/playlist/6NAFGyHBXuTMT6E8Fp2c31"
+                  ]
+              }
+          },
+          "examples": [{
+              "spotify": "https://open.spotify.com/playlist/6NAFGyHBXuTMT6E8Fp2c31"
+          }]
+      },
+      "followers": {
+          "title": "The followers Schema",
+          "type": "object",
+          "default": {},
+          "required": [
+              "href",
+              "total"
+          ],
+          "properties": {
+              "href": {
+                  "title": "The href Schema",
+                  "type": "null",
+                  "default": null,
+                  "examples": [
+                      null
+                  ]
+              },
+              "total": {
+                  "title": "The total Schema",
+                  "type": "number",
+                  "default": 0,
+                  "examples": [
+                      0
+                  ]
+              }
+          },
+          "examples": [{
+              "href": null,
+              "total": 0
+          }]
+      },
+      "href": {
+          "title": "The href Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+              "https://api.spotify.com/v1/playlists/6NAFGyHBXuTMT6E8Fp2c31"
+          ]
+      },
+      "id": {
+          "title": "The id Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+              "6NAFGyHBXuTMT6E8Fp2c31"
+          ]
+      },
+      "images": {
+          "title": "The images Schema",
+          "type": "array",
+          "default": [],
+          "items": {},
+          "examples": [
+              []
+          ]
+      },
+      "name": {
+          "title": "The name Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+              "teste copntrato22"
+          ]
+      },
+      "owner": {
+          "title": "The owner Schema",
+          "type": "object",
+          "default": {},
+          "required": [
+              "display_name",
+              "external_urls",
+              "href",
+              "id",
+              "type",
+              "uri"
+          ],
+          "properties": {
+              "display_name": {
+                  "title": "The display_name Schema",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                      "Marcos Rodrigues"
+                  ]
+              },
+              "external_urls": {
+                  "title": "The external_urls Schema",
+                  "type": "object",
+                  "default": {},
+                  "required": [
+                      "spotify"
+                  ],
+                  "properties": {
+                      "spotify": {
+                          "title": "The spotify Schema",
+                          "type": "string",
+                          "default": "",
+                          "examples": [
+                              "https://open.spotify.com/user/12158312048"
+                          ]
+                      }
+                  },
+                  "examples": [{
+                      "spotify": "https://open.spotify.com/user/12158312048"
+                  }]
+              },
+              "href": {
+                  "title": "The href Schema",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                      "https://api.spotify.com/v1/users/12158312048"
+                  ]
+              },
+              "id": {
+                  "title": "The id Schema",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                      "12158312048"
+                  ]
+              },
+              "type": {
+                  "title": "The type Schema",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                      "user"
+                  ]
+              },
+              "uri": {
+                  "title": "The uri Schema",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                      "spotify:user:12158312048"
+                  ]
+              }
+          },
+          "examples": [{
+              "display_name": "Marcos Rodrigues",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/user/12158312048"
+              },
+              "href": "https://api.spotify.com/v1/users/12158312048",
+              "id": "12158312048",
+              "type": "user",
+              "uri": "spotify:user:12158312048"
+          }]
+      },
+      "primary_color": {
+          "title": "The primary_color Schema",
+          "type": "null",
+          "default": null,
+          "examples": [
+              null
+          ]
+      },
+      "public": {
+          "title": "The public Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+              false
+          ]
+      },
+      "snapshot_id": {
+          "title": "The snapshot_id Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+              "MSxiYjU5NWQ1NWZmZDY0MjdjNzA4YjU5YTQ5YjBhZjEzY2QzMDVmMTVl"
+          ]
+      },
+      "tracks": {
+          "title": "The tracks Schema",
+          "type": "object",
+          "default": {},
+          "required": [
+              "href",
+              "items",
+              "limit",
+              "next",
+              "offset",
+              "previous",
+              "total"
+          ],
+          "properties": {
+              "href": {
+                  "title": "The href Schema",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                      "https://api.spotify.com/v1/playlists/6NAFGyHBXuTMT6E8Fp2c31/tracks"
+                  ]
+              },
+              "items": {
+                  "title": "The items Schema",
+                  "type": "array",
+                  "default": [],
+                  "items": {},
+                  "examples": [
+                      []
+                  ]
+              },
+              "limit": {
+                  "title": "The limit Schema",
+                  "type": "number",
+                  "default": 0,
+                  "examples": [
+                      100
+                  ]
+              },
+              "next": {
+                  "title": "The next Schema",
+                  "type": "null",
+                  "default": null,
+                  "examples": [
+                      null
+                  ]
+              },
+              "offset": {
+                  "title": "The offset Schema",
+                  "type": "number",
+                  "default": 0,
+                  "examples": [
+                      0
+                  ]
+              },
+              "previous": {
+                  "title": "The previous Schema",
+                  "type": "null",
+                  "default": null,
+                  "examples": [
+                      null
+                  ]
+              },
+              "total": {
+                  "title": "The total Schema",
+                  "type": "number",
+                  "default": 0,
+                  "examples": [
+                      0
+                  ]
+              }
+          },
+          "examples": [{
+              "href": "https://api.spotify.com/v1/playlists/6NAFGyHBXuTMT6E8Fp2c31/tracks",
+              "items": [],
+              "limit": 100,
+              "next": null,
+              "offset": 0,
+              "previous": null,
+              "total": 0
+          }]
+      },
+      "type": {
+          "title": "The type Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+              "playlist"
+          ]
+      },
+      "uri": {
+          "title": "The uri Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+              "spotify:playlist:6NAFGyHBXuTMT6E8Fp2c31"
+          ]
+      }
+  },
+  "examples": [{
+      "collaborative": false,
+      "description": null,
+      "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/6NAFGyHBXuTMT6E8Fp2c31"
+      },
+      "followers": {
+          "href": null,
+          "total": 0
+      },
+      "href": "https://api.spotify.com/v1/playlists/6NAFGyHBXuTMT6E8Fp2c31",
+      "id": "6NAFGyHBXuTMT6E8Fp2c31",
+      "images": [],
+      "name": "teste copntrato22",
+      "owner": {
+          "display_name": "Marcos Rodrigues",
+          "external_urls": {
+              "spotify": "https://open.spotify.com/user/12158312048"
+          },
+          "href": "https://api.spotify.com/v1/users/12158312048",
+          "id": "12158312048",
+          "type": "user",
+          "uri": "spotify:user:12158312048"
+      },
+      "primary_color": null,
+      "public": false,
+      "snapshot_id": "MSxiYjU5NWQ1NWZmZDY0MjdjNzA4YjU5YTQ5YjBhZjEzY2QzMDVmMTVl",
+      "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/6NAFGyHBXuTMT6E8Fp2c31/tracks",
+          "items": [],
+          "limit": 100,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 0
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6NAFGyHBXuTMT6E8Fp2c31"
+  }]
+}
